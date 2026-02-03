@@ -493,11 +493,6 @@
             position: relative;
         }
 
-        .explanation-content::before {
-            content: '💡';
-            margin-right: 8px;
-        }
-
         .btn-show-correct {
             background: transparent;
             border: 1px solid var(--incorrect-border);
@@ -951,7 +946,7 @@
             <div class="progress-bar">
                 <div class="progress-fill" id="quiz-progress" style="width: 0%"></div>
             </div>
-            <div class="progress-text"><span id="answered-count">0</span>/90 Answered</div>
+            <div class="progress-text"><span id="answered-count">0</span>/333 Answered</div>
         </div>
 
         <div class="controls">
@@ -7991,9 +7986,6 @@
                 answerBox.innerHTML = `
                     ✅ Correct Answer: ${correctAnswer}
                     <div class="explanation-container">
-                        <div class="explanation-content" style="display:block;">
-                            ${explanation}
-                        </div>
                     </div>
                 `;
                 answerBox.style.display = 'block';
